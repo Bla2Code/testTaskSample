@@ -1,0 +1,7 @@
+provider/ProviderTask.class
+consumer/ConsumerTask.class
+executor/ExecutorServiceExample.class
+dbconnect/DataBase$Connect.class
+dbconnect/ruleConnect.class
+consumer/ConsumerTask$EmailAggregator.class
+dbconnect/DataBase.class
