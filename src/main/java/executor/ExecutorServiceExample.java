@@ -16,7 +16,7 @@ public class ExecutorServiceExample {
             future.get();
             future2.get();
         } catch (ExecutionException | InterruptedException e) {
-            System.out.println("Stop");
+            System.out.println("Stop\n");
         } finally {
             executor.shutdown();
         }

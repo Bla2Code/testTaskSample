@@ -14,5 +14,5 @@ CREATE INDEX storage_id_idx ON public.storage USING btree (id);
 
 -- Permissions
 
-ALTER TABLE public."storage" OWNER TO "www-data";
-GRANT ALL ON TABLE public."storage" TO "www-data";
+ALTER TABLE public."storage" OWNER TO "user";
+GRANT ALL ON TABLE public."storage" TO "user";

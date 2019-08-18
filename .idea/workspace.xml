@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ff96c1e-dd91-41a6-b955-4e276ad480e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/provider/ListNameEmail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/provider/TaskList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logs/result.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/logs/result.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/consumer/ConsumerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/consumer/ConsumerTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/provider/ProviderTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/provider/ProviderTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dbconnect/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbconnect/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/executor/ExecutorServiceExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/executor/ExecutorServiceExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dump.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/consumer/ConsumerTask$EmailAggregator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/consumer/ConsumerTask$EmailAggregator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/consumer/ConsumerTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/consumer/ConsumerTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dump.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/provider/ProviderTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/provider/ProviderTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-executor.ExecutorServiceExampleTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-executor.ExecutorServiceExampleTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/executor.ExecutorServiceExampleTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/executor.ExecutorServiceExampleTest.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

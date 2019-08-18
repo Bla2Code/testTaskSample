@@ -8,9 +8,9 @@ public class DataBase {
     private String password;
 
     public DataBase() {
-        this.url = "jdbc:postgresql://localhost:5432/test";//"jdbc:postgresql://localhost:5434/db";
-        this.login = "www-data";//"user";
-        this.password = "111111";//"pass";
+        this.url = "jdbc:postgresql://localhost:5434/db";
+        this.login = "user";
+        this.password = "pass";
     }
 
     DataBase(String url, String user, String pass) {
