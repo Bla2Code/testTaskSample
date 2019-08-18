@@ -1,12 +1,8 @@
 package consumer;
 
 import dbconnect.DataBase;
-
-import java.io.IOException;
 import java.sql.*;
-import java.util.logging.FileHandler;
-import java.util.logging.Logger;
-import java.util.logging.SimpleFormatter;
+import org.apache.log4j.Logger;
 
 public class ConsumerTask implements Runnable {
 
@@ -60,8 +56,8 @@ public class ConsumerTask implements Runnable {
         int result = connect.push(statement, updateSql2);
 
         System.out.println(updateSql2);
+        if (result == 1) EmailAggregator.sendEmail(id);
 
-        if (result != 0) EmailAggregator.sendEmail(id);
         System.out.printf("Added %d rows\n\n", result);
     }
 
@@ -77,23 +73,12 @@ public class ConsumerTask implements Runnable {
 
     public static class EmailAggregator {
 
-        private final static Logger logger = Logger.getLogger("Result");
+        private static final Logger log = Logger.getLogger("EmailEmulator");
 
         public static void sendEmail(int id) {
-            System.out.println("Message number " + id + " sent");
-            try {
-                FileHandler fileHandler = new FileHandler("src/logs/result.log");
-                logger.addHandler(fileHandler);
-                SimpleFormatter formatter = new SimpleFormatter();
-                fileHandler.setFormatter(formatter);
-
-                logger.info("Message number " + id + " sent");
-
-            } catch (SecurityException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            log.info("Message number " + id + " sent");
         }
+
     }
+
 }

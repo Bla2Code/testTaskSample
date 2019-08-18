@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ff96c1e-dd91-41a6-b955-4e276ad480e3" name="Default Changelist" comment="" />
+    <list default="true" id="6ff96c1e-dd91-41a6-b955-4e276ad480e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logs/result.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/consumer/ConsumerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/consumer/ConsumerTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dbconnect/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbconnect/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dbconnect/ruleConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbconnect/ruleConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/executor/ExecutorServiceExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/executor/ExecutorServiceExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/provider/ProviderTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/provider/ProviderTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dump.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/executor/ExecutorServiceExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/executor/ExecutorServiceExampleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/consumer/ConsumerTask$EmailAggregator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/consumer/ConsumerTask$EmailAggregator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/consumer/ConsumerTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/consumer/ConsumerTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dbconnect/DataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dbconnect/DataBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dbconnect/DbConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dbconnect/DbConnect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dump.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-consumer.ConsumerTaskTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-consumer.ConsumerTaskTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-executor.ExecutorServiceExampleTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-executor.ExecutorServiceExampleTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-fortestpurpose.MySuperTaskClassTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-fortestpurpose.MySuperTaskClassTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-provider.ProviderTaskTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-provider.ProviderTaskTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/consumer.ConsumerTaskTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/consumer.ConsumerTaskTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/executor.ExecutorServiceExampleTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/executor.ExecutorServiceExampleTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/fortestpurpose.MySuperTaskClassTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/fortestpurpose.MySuperTaskClassTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/provider.ProviderTaskTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/provider.ProviderTaskTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/executor/ExecutorServiceExampleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/executor/ExecutorServiceExampleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testtasksample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/testtasksample.iml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +53,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -25,10 +65,13 @@
   </component>
   <component name="ProjectId" id="1PMT645cKAKJz3onKQgAUCtbir3" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -82,5 +125,18 @@
       <updated>1565682786467</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
