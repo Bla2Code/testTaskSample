@@ -30,7 +30,7 @@ public class ProviderTask implements Runnable {
 
         try {
             do {
-                boolean answer = sendRequest();
+                boolean answer = sendRequest(new TaskList());
                 if (!answer) break;
                 int rand = random.nextInt(max) + min;
                 Thread.currentThread().sleep(rand);
@@ -43,12 +43,14 @@ public class ProviderTask implements Runnable {
         System.out.printf("%s finished... \n", Thread.currentThread().getName());
     }
 
-    protected synchronized boolean sendRequest() throws SQLException {
+    protected synchronized boolean sendRequest(TaskList taskList) throws SQLException {
         boolean result = false;
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-        String sql = "INSERT INTO storage(name, status, created, updated) " +
-                "VALUES ('task', 'WAITING', '" + timestamp + "', '" + timestamp + "');";
+        String sql = "INSERT INTO storage(name, email, status, created, updated) " +
+                "VALUES ('" + taskList.getName() + "', '" + taskList.getEmail() + "'," +
+                " 'WAITING', '" + timestamp + "', '" + timestamp + "');";
         int answer = connect.push(statement, sql);
+        System.out.printf(sql + "\n");
         if (answer == 1) result = true;
         return result;
     }

@@ -2,42 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ff96c1e-dd91-41a6-b955-4e276ad480e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/provider/ListNameEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/provider/TaskList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logs/result.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logs/result.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/logs/result.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/consumer/ConsumerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/consumer/ConsumerTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dbconnect/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbconnect/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dbconnect/ruleConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbconnect/ruleConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/executor/ExecutorServiceExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/executor/ExecutorServiceExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/provider/ProviderTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/provider/ProviderTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dump.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/executor/ExecutorServiceExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/executor/ExecutorServiceExampleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/consumer/ConsumerTask$EmailAggregator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/consumer/ConsumerTask$EmailAggregator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/consumer/ConsumerTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/consumer/ConsumerTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dbconnect/DataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dbconnect/DataBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dbconnect/DbConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dbconnect/DbConnect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dump.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/provider/ProviderTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/provider/ProviderTask.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-consumer.ConsumerTaskTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-consumer.ConsumerTaskTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-executor.ExecutorServiceExampleTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-executor.ExecutorServiceExampleTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-fortestpurpose.MySuperTaskClassTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-fortestpurpose.MySuperTaskClassTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-provider.ProviderTaskTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-provider.ProviderTaskTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/consumer.ConsumerTaskTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/consumer.ConsumerTaskTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/executor.ExecutorServiceExampleTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/executor.ExecutorServiceExampleTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/fortestpurpose.MySuperTaskClassTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/fortestpurpose.MySuperTaskClassTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/provider.ProviderTaskTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/provider.ProviderTaskTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/executor/ExecutorServiceExampleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/executor/ExecutorServiceExampleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testtasksample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/testtasksample.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>

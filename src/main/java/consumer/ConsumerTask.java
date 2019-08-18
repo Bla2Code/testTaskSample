@@ -10,7 +10,7 @@ public class ConsumerTask implements Runnable {
     private Connection connection;
     private Statement statement;
     private final DataBase.Connect connect;
-    private final int period = 2_000;
+    private final int period = 10_000;
 
     public ConsumerTask() {
         sql = "SELECT * FROM storage WHERE status = " +
@@ -45,8 +45,6 @@ public class ConsumerTask implements Runnable {
     protected synchronized void sendRequest() throws SQLException {
         ResultSet resultSet = connect.pull(statement, sql);
 
-        System.out.println(sql);
-
         int id = getIdRequest(resultSet);
         if (id == 0) return;
 
@@ -54,18 +52,13 @@ public class ConsumerTask implements Runnable {
         String updateSql2 = "UPDATE storage SET status = 'READY'," +
                 " updated = '" + timestamp + "' WHERE id = " + id + ";";
         int result = connect.push(statement, updateSql2);
-
-        System.out.println(updateSql2);
         if (result == 1) EmailAggregator.sendEmail(id);
-
-        System.out.printf("Added %d rows\n\n", result);
     }
 
     protected int getIdRequest(ResultSet resultSet) throws SQLException {
         int id = 0;
         while (resultSet.next()) {
             id = resultSet.getInt("id");
-            System.out.println(id);
             return id;
         }
         return id;
@@ -77,6 +70,7 @@ public class ConsumerTask implements Runnable {
 
         public static void sendEmail(int id) {
             log.info("Message number " + id + " sent");
+            System.out.printf("Message number " + id + " sent\n");
         }
 
     }
