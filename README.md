@@ -16,4 +16,6 @@
 /src/logs/reslt.log - результат работы программы
 
 /src/main/java/dbconnect/ruleConnect - интерфейс работы с хранилицем (PostgreSql)
-(DataBase - реализует интерфейс ruleConnect)
+
+/src/main/java/dbconnect/DataBase - настройки хранилища, по умолчанию конструктор без параметров DataBase()
+Внутренний класс Connect реализует интерфейс ruleConnect
