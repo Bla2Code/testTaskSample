@@ -14,3 +14,6 @@
 (Внутренний статический класс EmailAggregator пишет в лог запись об успешно обработанной задачи)
 
 /src/logs/reslt.log - результат работы программы
+
+/src/main/java/dbconnect/ruleConnect - интерфейс работы с хранилицем (PostgreSql)
+(DataBase - реализует интерфейс ruleConnect)
