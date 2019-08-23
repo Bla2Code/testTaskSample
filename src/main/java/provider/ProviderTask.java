@@ -3,15 +3,12 @@ package provider;
 import dbconnect.DataBase;
 import java.sql.*;
 import java.util.Random;
-import java.util.concurrent.*;
 
 public class ProviderTask implements Runnable {
 
     private Connection connection;
     private Statement statement;
     private final DataBase.Connect connect;
-    private final int max = 5_000;
-    private final int min = 2_000;
     private Random random = new Random();
 
     public ProviderTask() {
@@ -26,8 +23,8 @@ public class ProviderTask implements Runnable {
     }
 
     public void run() {
-        System.out.println("Provider Start ... \n");
-
+        final int max = 5_000;
+        final int min = 2_000;
         try {
             do {
                 boolean answer = sendRequest(new TaskList());
@@ -39,8 +36,6 @@ public class ProviderTask implements Runnable {
         } catch (SQLException | InterruptedException e) {
             e.printStackTrace();
         }
-
-        System.out.printf("%s finished... \n", Thread.currentThread().getName());
     }
 
     protected synchronized boolean sendRequest(TaskList taskList) throws SQLException {
@@ -50,7 +45,6 @@ public class ProviderTask implements Runnable {
                 "VALUES ('" + taskList.getName() + "', '" + taskList.getEmail() + "'," +
                 " 'WAITING', '" + timestamp + "', '" + timestamp + "');";
         int answer = connect.push(statement, sql);
-        System.out.printf(sql + "\n");
         if (answer == 1) result = true;
         return result;
     }

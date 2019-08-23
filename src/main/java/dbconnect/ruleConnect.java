@@ -6,15 +6,15 @@ public interface ruleConnect {
     /**
      * Establishes a connection to the database
      * @return connection Connection
-     * @throws SQLException
-     * @throws ClassNotFoundException
+     * @throws SQLException SQLException
+     * @throws ClassNotFoundException ClassNotFoundException
      */
     Connection connection() throws SQLException, ClassNotFoundException;
 
     /**
      * Disconnects from database
      * @param connect Connection
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     void disconnect(Connection connect) throws SQLException;
 
@@ -23,16 +23,16 @@ public interface ruleConnect {
      * @param statement Statement
      * @param sql String
      * @return result int
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     int push(Statement statement, String sql) throws SQLException;
 
     /**
-     * Gets the task
+     * Get the task
      * @param statement Statement
      * @param sql String
      * @return resultSet ResultSet
-     * @throws SQLException
+     * @throws SQLException SQLException
      */
     ResultSet pull(Statement statement, String sql) throws SQLException;
 }

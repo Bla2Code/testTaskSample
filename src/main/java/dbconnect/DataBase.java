@@ -1,6 +1,11 @@
 package dbconnect;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.sql.*;
+import java.util.Properties;
 
 public class DataBase {
     private String url;
@@ -8,15 +13,23 @@ public class DataBase {
     private String password;
 
     public DataBase() {
-        this.url = "jdbc:postgresql://localhost:5434/db";
-        this.login = "user";
-        this.password = "pass";
-    }
+        File file = new File("data.properties");
+        Properties properties = new Properties();
+        try {
+            properties.load(new FileReader(file));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-    DataBase(String url, String user, String pass) {
-        this.url = url;
-        this.login = user;
-        this.password = pass;
+        String driver = properties.getProperty("driver");
+        String host = properties.getProperty("host");
+        String port = properties.getProperty("port");
+        String database = properties.getProperty("database");
+
+        //this.url = "jdbc:postgresql://localhost:5434/db";
+        this.url = driver + "://" + host + ":"  + port + "/" + database;
+        this.login = properties.getProperty("login");
+        this.password = properties.getProperty("password");
     }
 
     protected String getUrl() {

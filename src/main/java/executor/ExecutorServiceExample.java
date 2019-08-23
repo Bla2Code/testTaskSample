@@ -1,13 +1,13 @@
 package executor;
 
 import consumer.ConsumerTask;
+import org.apache.log4j.Logger;
 import provider.ProviderTask;
-
 import java.util.concurrent.*;
 
-public class ExecutorServiceExample {
-    ExecutorService executor;
-
+class ExecutorServiceExample {
+    private ExecutorService executor;
+    private static final Logger log = Logger.getLogger("EmailEmulator");
     ExecutorServiceExample() {
         try {
             executor = Executors.newFixedThreadPool(2);
@@ -16,8 +16,9 @@ public class ExecutorServiceExample {
             future.get();
             future2.get();
         } catch (ExecutionException | InterruptedException e) {
-            System.out.println("Stop\n");
+            log.info("... Stop!");
         } finally {
+            assert executor != null;
             executor.shutdown();
         }
     }

@@ -10,7 +10,6 @@ public class ConsumerTask implements Runnable {
     private Connection connection;
     private Statement statement;
     private final DataBase.Connect connect;
-    private final int period = 10_000;
 
     public ConsumerTask() {
         sql = "SELECT * FROM storage WHERE status = " +
@@ -27,8 +26,7 @@ public class ConsumerTask implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("Consumer Start ... \n");
-
+        final int period = 10_000;
         try {
             do {
                 sendRequest();
@@ -38,8 +36,6 @@ public class ConsumerTask implements Runnable {
         } catch (SQLException | InterruptedException e) {
             e.printStackTrace();
         }
-
-        System.out.printf("%s finished... \n", Thread.currentThread().getName());
     }
 
     protected synchronized void sendRequest() throws SQLException {
@@ -56,12 +52,8 @@ public class ConsumerTask implements Runnable {
     }
 
     protected int getIdRequest(ResultSet resultSet) throws SQLException {
-        int id = 0;
-        while (resultSet.next()) {
-            id = resultSet.getInt("id");
-            return id;
-        }
-        return id;
+        resultSet.next();
+        return resultSet.getInt("id");
     }
 
     public static class EmailAggregator {
@@ -70,7 +62,6 @@ public class ConsumerTask implements Runnable {
 
         public static void sendEmail(int id) {
             log.info("Message number " + id + " sent");
-            System.out.printf("Message number " + id + " sent\n");
         }
 
     }

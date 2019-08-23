@@ -3,14 +3,14 @@ package provider;
 public interface ListNameEmail {
 
     /**
-     * Adds a name for sending email messages
-     * @param name
+     * Add a name for sending email messages
+     * @param name name
      */
     void setName(String name);
 
     /**
      * Add email address for mailing
-     * @param email
+     * @param email email
      */
     void setEmail(String email);
 
@@ -28,7 +28,6 @@ public interface ListNameEmail {
 
     /**
      * A function for receiving email distribution addresses
-     * @return void
      */
      void getTaskList();
 }
